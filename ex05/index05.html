@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<title> Semantic Architecture</title>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header>
+			<p>Your guid to learn web development </p>
+			<nav aria-label="Main Navigation">
+				<ul>
+					<li> <a href="#home"> Home </a> </li>
+					<li> <a href="#article"> Articles </a> </li>
+					<li> <a href="#timetable"> Study TimeTable </a></li>
+					<li> <a href="#Register"> Register </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<!-- Main -->
+		<main id="home">
+			<section id="article">
+				<!-- latest Article -->
+				<h2> Tech articles: </h2>
+
+				<article>
+					<h3> Why do we Learn HTML </h3>
+				
+					<p>
+						HTML stands for 
+						<strong> HyperText Markup Language </strong>
+						 It provides the structure of web pages.
+                    				Learning HTML is an essential first step
+                    				toward becoming a web developer.
+					</p>
+					<p>
+                    				HTML elements describe content, while
+                    				<em>semantic HTML</em> gives that content
+                    				meaningful structure.
+                			</p>
+					<h4> benefits of learning HTML </h4>
+					<ul>
+						<li>Build structured web pages.</li>
+                    				<li>Improve accessibility.</li>
+                    				<li>Understand website content and layout.</li>
+					</ul>
+					<p>
+						Learn more from the 
+						<a href="https://www.w3schools.com/Html/" target="_blank" 
+							rel="noopener noreferrer"> W3School documentation </a>
+					</p>
+				</article>
+
+				<!-- Article 2 -->
+				<article>
+					<h3> Essential Web Development Tools </h3>
+					<p>
+                    				Developers use different tools to create,
+                    				test, and maintain websites.
+                			</p>
+					<ol>
+						<li>HTML for page structure.</li>
+                				<li>CSS for presentation and styling.</li>
+                    				<li>JavaScript for interactivity.</li>
+                    				<li>Git for version control.</li>
+					</ol>
+			
+					<h4>A Simple Git Workflow</h4>
+                			<ol>
+                    				<li>Create or modify a file.</li>
+                    				<li>Stage changes using <code>git add</code>.</li>
+                    				<li>Save a snapshot using <code>git commit</code>.</li>
+                    				<li>Share changes using <code>git push</code>.</li>
+                			</ol>
+					<pre><code>
+						git add .
+						git commit -m "Update blog"
+						git push
+					</code></br>
+				</article>
+			</section>			
+
+		
+	                 <!-- Aside: Related information -->
+                         <aside>
+                         	<h2>Quick Learning Tips</h2>
+                                        <p>
+                                                Practice coding every day, build small projects,
+                                                and review your mistakes.
+                                        </p>
+
+                                        <h3>Useful Resources</h3>
+                                        <ul>
+                                                <li> <a href="https://developer.mozilla.org/" target="_blank"
+                                                        rel="noopener noreferrer">MDN web Docs</a> </li>
+                                        </ul>
+                                        <ul>
+                                                <li> <a href="https://git-scm.com/doc" target="_blank"
+                                                        rel="noopener noreferrer"> Git Documentation </a> </li>
+                                        </ul>
+			</aside>
+
+			<!-- Section Tabular data -->
+			<section id="timetable">
+				<table border="1">
+					<caption> My weekly Web development plan </caption>
+				
+					<thead>
+                    				<tr>
+                       	 				<th scope="col">Day</th>
+                        				<th scope="col">Morning</th>
+                        				<th scope="col">Afternoon</th>
+                   				</tr>
+               	 			</thead>
+
+                			<tbody>
+                    				<tr>
+                        				<td>Sunday</td>
+                        				<td>HTML</td>
+                        				<td>Practice Exercises</td>
+                    				</tr>
+
+                    				<tr>
+                        				<td>Monday</td>
+				                        <td>CSS</td>
+                        				<td>Build a Web Page</td>
+                    				</tr>
+                    				
+						<tr>
+                        				<td>Tuesday</td>
+                        				<td>Git</td>
+                        				<td>Version Control Practice</td>
+                    				</tr>
+                    
+						<tr>
+                        				<td>Wednesday</td>
+                        				<td>JavaScript</td>
+                        				<td>Review Concepts</td>
+                    			  	</tr>
+                    					
+						<tr>
+                        				<td>Thursday</td>
+                        				<td>HTML Forms</td>
+                        				<td>Mini Project</td>
+                    				</tr>
+                			</tbody>
+            			</table>
+			</section>
+
+			<!-- Registration Form -->
+			<section id="register">
+				<h2>Join Our Learning Community</h2>
+
+            			<form action="#" method="post">
+
+                		<p>
+                    			<label for="full-name">Full Name:</label>
+                    			<input type="text" id="full-name" name="full-name" required minlength="3">
+                		</p>
+
+                		<p>
+                    			<label for="email">Email Address:</label>
+                    			<input type="email"
+                           		id="email"
+                           		name="email"
+                           		required>
+                		</p>
+
+                		<p>
+                    			<label for="password">Password:</label>
+                    			<input type="password"
+                           		id="password"
+                           		name="password"
+                           		required
+                           		minlength="8">
+                		</p>
+
+                		<fieldset>
+                    			<legend>Preferred Learning Method</legend>
+
+                    			<input type="radio"
+                           		id="videos"
+                           		name="learning-method"
+                           		value="videos"
+                           		required>
+                    			<label for="videos">Video Tutorials</label>
+
+                    			<input type="radio"
+                           		id="reading"
+                           		name="learning-method"
+                           		value="reading">
+                    			<label for="reading">Reading Articles</label>
+                		</fieldset>
+
+                		<p>
+                    			<label for="level">Experience Level:</label>
+                    			<select id="level" name="level" required>
+                        			<option value="">Select your level</option>
+                        			<option value="beginner">Beginner</option>
+                        			<option value="intermediate">Intermediate</option>
+                        			<option value="advanced">Advanced</option>
+                    			</select>
+                		</p>
+
+                		<p>
+                    			<label for="comments">Your Learning Goals:</label>
+                    			<textarea id="comments"
+                              		name="comments"
+                              		rows="4"
+                              		cols="35"
+                              		minlength="10"
+                              		required></textarea>
+                		</p>
+
+                		<p>
+                    			<input type="checkbox"
+                           		id="agreement"
+                           		name="agreement"
+                           		required>
+                    			<label for="agreement">
+                        		I agree to the terms and conditions.
+                    			</label>
+               			</p>
+
+                		<button type="submit">Register</button>
+                            </form>
+			</section>
+		</main>
+		
+		<!-- Footer -->
+                <footer>
+                	<p>&copy; 2026 TechLearn. All rights reserved.</p>
+                        <p>
+                            Contact:
+                                <a href="mailto:info@example.com">Email Us</a>
+                        </p>
+                        <p><a href="#home">Back to Top</a></p>
+                </footer>
+	</body>
+</html>
